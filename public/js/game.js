@@ -35,6 +35,6 @@ function pinnedPage() {
 }
 
 window.onload = () => {
-	if (location.pathname == "/games") gamePage();
+	if (location.pathname == "/games.html") gamePage();
 	if (location.pathname == "/pinned.html") pinnedPage();
 }
