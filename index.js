@@ -2,7 +2,7 @@ import createBareServer from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
 const httpServer = http.createServer();
 
