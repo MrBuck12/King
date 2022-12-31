@@ -1,12 +1,6 @@
 import createBareServer from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
-import fs from 'fs';
-
-const options = {
-	key: fs.readFileSync('ssl/certificate.pem'),
-	cert: fs.readFileSync('ssl/privatekey.pem')
-};
 
 const httpServer = http.createServer();
 
