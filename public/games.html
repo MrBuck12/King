@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Apps</title>
+
+	<meta property="og:title" content="Rogue" />
+	<meta property="og:type" content="Rogue" />
+	<meta property="og:url" content="https://rogue.1pqpw.repl.co" />
+	<meta property="og:image" content="images/banner.png" />
+	<meta property="og:description" content="Search, Play, Chat - Go Rogue" />
+	<meta name="theme-color" content="#B82B2B">
+
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="stylesheet" href="css/games.css">
+	
+	<script src="js/root.js" defer></script>
+	<script src="js/game.js" defer></script>
+	<script src="js/menu.js" defer></script>
+	<script src="js/theme.js" defer></script>
+	
+</head>
+
+<body>
+	<script src="js/stealth.js"></script>
+	
+	<script src="/pxs/uv/client.js"></script>
+	<script src="/pxs/uv/beta/uv.bundle.js"></script>
+	<script src="/pxs/uv/beta/uv.config.js"></script>
+	<script src="/pxs/ratic/ratic.sw.js"></script>
+	<script src="/pxs/ratic/ratic.config.js"></script>
+	
+	<div class="content">
+		<div class="addGame">
+			<div class="add">
+				<div class="title">
+					<p>Add an app</p>
+					<hr>
+				</div>
+				
+				<div class="in">
+					<input placeholder="Enter a URL:">
+				</div>
+			</div>
+		</div>
+		
+		<div class="ctxmenu">
+			<span class="ctxitem" id="ctxpin">
+				<p>Pin</p>
+			</span>
+		</div>
+		
+		<header>
+			<div class="widget title" onclick="location.pathname='/';">
+				<p>Apps</p>
+			</div>
+		</header>
+
+		<footer>
+			<div class="widgets">
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

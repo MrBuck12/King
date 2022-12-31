@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Games</title>
+
+	<meta property="og:title" content="Rogue" />
+	<meta property="og:type" content="Rogue" />
+	<meta property="og:url" content="https://rogue.1pqpw.repl.co" />
+	<meta property="og:image" content="images/banner.png" />
+	<meta property="og:description" content="Search, Play, Chat - Go Rogue" />
+	<meta name="theme-color" content="#B82B2B">
+
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="stylesheet" href="css/games.css">
+	
+	<script src="js/root.js" defer></script>
+	<script src="js/settings.js" defer></script>
+	<script src="js/theme.js" defer></script>
+</head>
+
+<body>
+	<script src="js/stealth.js"></script>
+	
+	<script src="/pxs/uv/client.js"></script>
+	<script src="/pxs/uv/beta/uv.bundle.js"></script>
+	<script src="/pxs/uv/beta/uv.config.js"></script>
+	<script src="/pxs/ratic/ratic.sw.js"></script>
+	<script src="/pxs/ratic/ratic.config.js"></script>
+	
+	<div class="content">
+		<header>
+			<div class="widget title" onclick="location.pathname='/';">
+				<p>Settings</p>
+			</div>
+		</header>
+
+		<footer>
+			<div class="widgets">
+				<div class="widget game">
+					<a>Proxy</a>
+					<select name="proxyselect" id="proxyselect">
+					    
+					</select>
+				</div>
+
+				<div class="widget game">
+					<a>Theme</a>
+					<select name="themeselect" id="themeselect">
+					</select>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
