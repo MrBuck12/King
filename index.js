@@ -2,6 +2,8 @@ import createBareServer from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
 
+const PORT = process.env.PORT || 8080;
+
 const httpServer = http.createServer();
 
 const serve = new nodeStatic.Server("./public");
@@ -32,7 +34,7 @@ httpServer.on('upgrade', (req, socket, head) => {
 });
 
 httpServer.on('listening', () => {
-	console.log('HTTP server listening');
+	console.log('HTTP server listening on port: ' + PORT);
 });
 
-httpServer.listen(8080);
+httpServer.listen(PORT);
